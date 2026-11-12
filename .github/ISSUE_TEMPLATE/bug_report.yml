@@ -1,0 +1,57 @@
+name: Resource pack bug report
+description: Report a bug or visual issue with the LowCobwebs Minecraft resource pack.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Thanks for helping improve LowCobwebs! Please check that the issue is reproducible with the latest version of the pack.
+  - type: input
+    id: pack-version
+    attributes:
+      label: Resource pack version
+      description: Which version of LowCobwebs are you using?
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft version
+      description: Which Minecraft version are you playing?
+      placeholder: e.g. 1.21.4
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear description of what is wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: List the steps needed to reproduce the issue.
+      placeholder: |
+        1. Enable the resource pack...
+        2. Join a world...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or additional context
+      description: Add screenshots, video, or details about other active resource packs or mods, if relevant.
+    validations:
+      required: false
